@@ -1,5 +1,6 @@
 package task008;
 
+//https://www.codewars.com/kata/5a805d8cafa10f8b930005ba/train/java
 public class CodeWarsMath {
     public static int nearestSq(final int n){
         double squareRoot = Math.sqrt(n);
