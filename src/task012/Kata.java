@@ -1,4 +1,4 @@
-import java.util.Objects;
+package task012;
 
 //https://www.codewars.com/kata/5672a98bdbdd995fad00000f/train/java
 public class Kata {
