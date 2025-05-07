@@ -2,6 +2,7 @@ package task015;
 
 import java.util.ArrayList;
 
+//https://www.codewars.com/kata/554ca54ffa7d91b236000023
 public class EnoughIsEnough {
     public static int[] deleteNth(int[] elements, int maxOccurrences) {
         ArrayList<Integer> numbers = new ArrayList<>();
