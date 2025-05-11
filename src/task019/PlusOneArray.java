@@ -23,7 +23,7 @@ public class PlusOneArray {
             return false;
         }
 
-        if (PlusOneArray.hasNegativeGigits(numbers)) {
+        if (PlusOneArray.hasNegativeDigits(numbers)) {
             return false;
         }
 
@@ -34,7 +34,7 @@ public class PlusOneArray {
         return true;
     }
 
-    private static boolean hasNegativeGigits(int[] numbers) {
+    private static boolean hasNegativeDigits(int[] numbers) {
         for (int number : numbers) {
             if (0 > number) {
                 return true;
@@ -73,7 +73,6 @@ public class PlusOneArray {
         }
 
         if (carry > 0) {
-            // Need to expand the array to add carry at the beginning
             int[] newDigits = new int[digits.length + 1];
             newDigits[0] = carry;
             System.arraycopy(digits, 0, newDigits, 1, digits.length);
