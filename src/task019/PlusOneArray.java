@@ -1,8 +1,5 @@
 package task019;
 
-import java.util.Arrays;
-import java.util.stream.Collectors;
-
 //https://www.codewars.com/kata/5514e5b77e6b2f38e0000ca9/train/java
 public class PlusOneArray {
     public static int[] upArray(final int[] arr) {
