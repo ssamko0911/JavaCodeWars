@@ -1,5 +1,7 @@
 package task031;
 
+import java.util.Arrays;
+
 //https://www.codewars.com/kata/5769b3802ae6f8e4890009d2/train/java
 public class Kata {
     public static Object[] removeEveryOther(Object[] arr) {
