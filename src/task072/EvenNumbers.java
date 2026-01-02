@@ -3,7 +3,6 @@ package src.task072;
 //https://www.codewars.com/kata/55edaba99da3a9c84000003b/train/java
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class EvenNumbers {
@@ -20,9 +19,5 @@ public class EvenNumbers {
         }
 
         return list.stream().mapToInt(i -> i).toArray();
-    }
-
-    static void main() {
-        System.out.println(Arrays.toString(divisibleBy(new int[] {1,2,3,4,5,6},2)));
     }
 }
