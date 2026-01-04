@@ -16,11 +16,4 @@ public class Kata {
 
         return totalFloors;
     }
-
-    static void main() {
-        System.out.println(elevatorDistance(new int[]{5, 2, 8}));
-        System.out.println(elevatorDistance(new int[]{1, 2, 3}));
-        System.out.println(elevatorDistance(new int[]{7, 1, 7, 1}));
-        System.out.println(elevatorDistance(new int[]{3, 3}));
-    }
 }
