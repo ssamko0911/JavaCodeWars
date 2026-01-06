@@ -1,6 +1,7 @@
 package task088;
 
 //https://www.codewars.com/kata/5727bb0fe81185ae62000ae3/train/java
+// DS for better performance: Deque<Character> characterDeque = new LinkedList<>();
 
 import java.util.ArrayList;
 import java.util.List;
