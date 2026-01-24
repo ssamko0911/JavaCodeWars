@@ -1,22 +1,24 @@
 package task039;
 
+import java.math.BigInteger;
+
 //https://www.codewars.com/kata/54a91a4883a7de5d7800009c/train/java
+
 public class Kata {
     public static String incrementString(String str) {
         String numberAsString = Kata.extractDigits(str);
         int charCount = numberAsString.length();
-        long number;
 
         if (0 == charCount) {
             return str + 1;
-        } else {
-            number = Integer.parseInt(numberAsString);
-            number++;
         }
+
+        BigInteger number = new BigInteger(numberAsString);
+        number = number.add(BigInteger.ONE);
 
         String letters = Kata.extractLetters(str, charCount);
 
-        return Kata.buildIncrementedString(letters, number, charCount);
+        return Kata.buildIncrementedString(letters, number.toString(), charCount);
     }
 
     public static String extractDigits(String str) {
@@ -40,9 +42,9 @@ public class Kata {
         return str.substring(0, str.length() - numberLength);
     }
 
-    public static String buildIncrementedString(String letters, long number, int numberLength) {
-        if (String.valueOf(number).length() < numberLength) {
-            return letters + "0".repeat(numberLength - String.valueOf(number).length()) + number;
+    public static String buildIncrementedString(String letters, String number, int originalNumberLength) {
+        if (number.length() < originalNumberLength) {
+            return letters + "0".repeat(originalNumberLength - number.length()) + number;
         } else {
             return letters + number;
         }
